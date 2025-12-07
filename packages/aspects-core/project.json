@@ -1,0 +1,25 @@
+{
+  "name": "aspects-core",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/aspects-core/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/aspects-core"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build --watch",
+        "cwd": "packages/aspects-core"
+      }
+    }
+  },
+  "tags": ["type:lib", "scope:core"],
+  "implicitDependencies": ["ecs-core"]
+}
+

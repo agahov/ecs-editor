@@ -1,0 +1,25 @@
+{
+  "name": "debug-tools",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/debug-tools/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/debug-tools"
+      }
+    },
+    "dev": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "vite build --watch",
+        "cwd": "packages/debug-tools"
+      }
+    }
+  },
+  "tags": ["type:lib", "scope:tools"],
+  "implicitDependencies": ["ecs-core"]
+}
+

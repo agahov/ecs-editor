@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ecs-editor/ecs-core": ["packages/ecs-core/src/index.ts"],
+      "@ecs-editor/aspects-core": ["packages/aspects-core/src/index.ts"],
+      "@ecs-editor/canvas-runtime": ["packages/canvas-runtime/src/index.ts"],
+      "@ecs-editor/debug-tools": ["packages/debug-tools/src/index.ts"],
+      "@ecs-editor/ui-library": ["packages/ui-library/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "tmp"]
+}
+
