@@ -10,19 +10,19 @@
       "x": 300,
       "y": 200,
       "radius": 30,
-      "color": "#ccff00"
+      "color": "#ff1100"
     },
     {
       "x": 500,
       "y": 250,
       "radius": 20,
-      "color": "#ffff33"
+      "color": "#ff2222"
     },
     {
       "x": 700,
       "y": 300,
       "radius": 35,
-      "color": "#ff6666"
+      "color": "#ff3344"
     }
   ]
 }
